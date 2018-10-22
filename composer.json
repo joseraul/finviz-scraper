@@ -1,7 +1,7 @@
 {
   "name": "joseraul/finviz-crawler",
   "license": "MIT",
-  "description": "Framework agnostic PHP crawler of Finviz",
+  "description": "Framework agnostic PHP Finviz crawler",
   "authors": [
     {
       "name": "Jose Raul Perez",

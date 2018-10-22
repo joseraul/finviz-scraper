@@ -1,0 +1,22 @@
+{
+  "name": "joseraul/finviz-crawler",
+  "license": "MIT",
+  "description": "Framework agnostic PHP crawler of Finviz",
+  "authors": [
+    {
+      "name": "Jose Raul Perez",
+      "email": "joseraul.perezfrias@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "FinvizCrawler\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  },
+  "require": {
+    "fabpot/goutte": "^3.2"
+  }
+}

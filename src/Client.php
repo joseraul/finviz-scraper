@@ -10,13 +10,20 @@ class Client
 
     /**
      * Client constructor.
+     * @param null $crawler
      */
-    public function __construct()
+    public function __construct($crawler = null)
     {
-        $this->crawler = new Crawler();
+        if (!$crawler) {
+            $crawler = new Crawler();
+        }
+
+        $this->crawler = $crawler;
     }
 
     /**
+     * Extract information from https://finviz.com/quote.ashx?t=[SYMBOL]
+     *
      * @param $symbol
      * @return array
      */
@@ -30,6 +37,12 @@ class Client
         ];
     }
 
+    /**
+     * Clean and return the snapshot table.
+     *
+     * @param $response
+     * @return array
+     */
     private function getSnapshot($response)
     {
         $data = [];

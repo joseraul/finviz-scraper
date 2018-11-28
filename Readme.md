@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/joseraul/finviz-scraper.svg?branch=master)](https://travis-ci.org/joseraul/finviz-scraper)
+
 ### Description
 Finviz is one of the most famous stock screener and financial visualizations.
 

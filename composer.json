@@ -1,5 +1,5 @@
 {
-  "name": "joseraul/finviz-crawler",
+  "name": "joseraul/finviz-scraper",
   "license": "MIT",
   "description": "Framework agnostic PHP Finviz crawler",
   "authors": [

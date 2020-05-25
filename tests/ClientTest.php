@@ -2,9 +2,10 @@
 
 use FinvizCrawler\Client;
 use Goutte\Client as Goutte;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\DomCrawler\Crawler;
 
-class ClientTest extends \PHPUnit\Framework\TestCase
+class ClientTest extends TestCase
 {
     private function getGoutteMock()
     {

@@ -3,6 +3,7 @@
 namespace FinvizCrawler;
 
 use Goutte\Client as Crawler;
+use Symfony\Component\HttpClient\CurlHttpClient;
 
 class Client
 {
@@ -11,11 +12,14 @@ class Client
     /**
      * Client constructor.
      * @param null $crawler
+     * @param array $curl_options
      */
-    public function __construct($crawler = null)
+    public function __construct($crawler = null, $curl_options = [])
     {
         if (!$crawler) {
-            $crawler = new Crawler();
+            $crawler = new Crawler(
+                new CurlHttpClient($curl_options)
+            );
         }
 
         $this->crawler = $crawler;

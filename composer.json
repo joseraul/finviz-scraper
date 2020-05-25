@@ -17,6 +17,6 @@
     "phpunit/phpunit": "^7"
   },
   "require": {
-    "fabpot/goutte": "^3.2"
+    "fabpot/goutte": "^4.0"
   }
 }

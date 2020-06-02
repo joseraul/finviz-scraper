@@ -9,7 +9,7 @@ it is only for your personal use.
 ### Installation
 
 ```
-composer require joseraul/finviz-crawler
+composer require joseraul/finviz-scraper
 ```
 
 ### Example of use
